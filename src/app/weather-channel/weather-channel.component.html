@@ -1,15 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6" >
-            <app-location-search 
-                (sendDataToParent)="eventFromChild($event)"
-            ></app-location-search>
-        </div>
-        <div class="col-md-6" >
-            <app-location-result 
-                *ngIf="showTheResult" 
-                
-            ></app-location-result>
+            <app-location-search></app-location-search>
         </div>
     </div>
 </div>

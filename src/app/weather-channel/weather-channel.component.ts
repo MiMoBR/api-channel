@@ -6,16 +6,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./weather-channel.component.css']
 })
 export class WeatherChannelComponent implements OnInit {
-  showTheResult = false;
-
-  agreed = 0;
-  disagreed = 0;
-  voters = ['Narco', 'Celeritas', 'Bombasto'];
-
-  onVoted(agreed: boolean) {
-    agreed ? this.agreed++ : this.disagreed++;
-    console.log(agreed)
-  }
 
   constructor() { }
 

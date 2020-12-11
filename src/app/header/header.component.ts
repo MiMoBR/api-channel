@@ -19,9 +19,9 @@ export class HeaderComponent implements OnInit {
   constructor(private titleService: Title) {};
   setDocTitle(title: string) {
     // console.log('current title:::::' + this.titleService.getTitle());
-    this.titleService.setTitle(title);;
+    this.titleService.setTitle(title);
   }
-  
+
   ngOnInit() {
   }
 
