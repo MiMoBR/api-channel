@@ -1,0 +1,9 @@
+.contentSingleTitle{
+    display: flex;
+    justify-content: inherit;
+    align-items: baseline;
+}
+.contentSingleTitle h4{
+    margin-bottom: 0;
+    margin-left: 0.4rem;
+}

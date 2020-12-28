@@ -1,0 +1,11 @@
+
+.contentSingle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentSingleTitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}

@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login svg.ionicon{
+    width: 1.5rem;
+    cursor: pointer;
+    color: var(--darkBlue);
+    fill: var(--darkBlue);
+}

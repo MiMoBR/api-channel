@@ -1,0 +1,23 @@
+<div class="containerFluid">
+    <div class="hearderBlog">
+        <app-headerblog  (featureSelectedNavBlog)="onNavigateBlog($event)"></app-headerblog>
+    </div>
+    <router-outlet></router-outlet>
+    <div class="contentBlog">
+        <div class="" *ngIf="loadedFeatureBlog === 'mainContentBlog'">
+            <app-maincontent></app-maincontent>
+        </div>
+        <div class="" *ngIf="loadedFeatureBlog === 'backofficeBlog'">
+            <app-backoffice></app-backoffice>
+        </div>
+        <div class="" *ngIf="loadedFeatureBlog === 'deleteContentBlog'">
+            <app-deletecontent></app-deletecontent>
+        </div>
+        <div class="" *ngIf="loadedFeatureBlog === 'updateContentBlog'">
+            <app-update></app-update>
+        </div>
+        <div class="" *ngIf="loadedFeatureBlog === 'loginBlog'">
+            <app-login></app-login>
+        </div>
+    </div>
+</div>

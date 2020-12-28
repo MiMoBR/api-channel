@@ -1,0 +1,40 @@
+.imgFluid{
+    max-width: 100%;
+    height: auto;
+}
+.allContents{
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-wrap: wrap;
+}
+.contentSingle{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%*.33);
+    padding: 1rem;
+}
+.contentSinglePhoto{
+    display: flex;
+    justify-content: center;
+}
+.contentSinglePhoto img{
+    height: 10rem;
+}
+.contentSingleTitle{
+    text-align: center;
+}
+.contentSingleSubTitle h3{
+    font-size: 1.2rem;
+}
+.contentSingleInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contentSingleInfo p{
+    font-size: 0.8rem;
+}
+.contentSingleContent{
+
+}

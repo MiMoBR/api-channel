@@ -1,0 +1,25 @@
+<div class="allContents">
+    <div *ngFor="let content of allContent" class="contentSingle">
+        <div class="contentSinglePhoto">
+            <img src="{{content.pic1}}" alt="{{content.title}}" title="{{content.title}}"
+                class="imgFluid">
+        </div>
+        <div class="contentSingleTitle">
+            <h2>{{content.title}}</h2>                
+        </div>
+        <div class="contentSingleSubTitle">
+            <h3>{{content.subTitle}}</h3>
+        </div>
+        <div class="contentSingleInfo">
+            <div>
+                <p>{{content.seoAuthor}}</p>
+            </div>
+            <div>
+                <p>{{content.dtCreated}}</p>
+            </div>
+        </div>
+        <div class="contentSingleContent">
+            <p>&nbsp;&nbsp;&nbsp;{{content.content}}</p>  
+        </div>
+    </div>
+</div>
