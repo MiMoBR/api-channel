@@ -1,12 +1,11 @@
-<div class="row">
-    <div class="col-md-6">
-        <div class="allContents">
-            <div>
-                <h1>To delete a content from blog</h1>
+<div class="boxToContent">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="allContents">
+                <div>
+                    <h2>To delete a content from blog</h2>
+                </div>
             </div>
-            <!-- <div class="contentSingleTitle">
-                <input type="text" id="idToDelete" name="idToDelete" [(ngModel)]="contentToDelete.id">
-            </div> -->
             <div class="form-group">
                 <select class="form-control" [(ngModel)]="contentToDelete.id">
                     <option *ngFor="let contentToDelete of allContentToDelete" [ngValue]="contentToDelete.id">
@@ -15,10 +14,12 @@
                 </select>
             </div>
         </div>
-    </div>
-</div>    
-<div class="row">
-    <div class="col-md-12">
-        <button (click)="deleteAContent()" class="btn btn-primary">Delete a Content</button>
+    </div>    
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <button (click)="deleteAContent()" class="btn btn-primary">Delete a Content</button>
+            </div>
+        </div>
     </div>
 </div>

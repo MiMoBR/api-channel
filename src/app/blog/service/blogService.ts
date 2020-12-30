@@ -17,22 +17,25 @@ export class BlogServices{/*    https://www.techiediaries.com/angular-10-crud-ex
 
     /*  C - Create  */
     create(data): Observable<any>{
-        console.log("data");
+        console.log("CREATE data");
         console.log(data);
         return this.http.post(`${baseURL}/postContent`, data);
     }
+
     /*  R - Read    */
     fullContent(){
         return this.http.get<AllContent[]>(`${baseURL}/getList`);
     }
+
     /*  U - Update a content from blog*/
     update(data): Observable<any> {
-        alert("  data --- "+data);
+        // console.log("UPDATE data");
+        // console.log(data);
         return this.http.post(`${baseURL}/updateAPost`, data);
     }
+
     /*  D - Delete a content from blog */
     deleteContent(id): Observable<any> {
-        alert(id);
         return this.http.delete(`${baseURL}/deleteByIdContent/${id}`);
     }
 }

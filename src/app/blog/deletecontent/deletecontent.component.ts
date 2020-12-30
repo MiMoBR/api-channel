@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AllContent } from '../model/allContent';
 import { BlogServices } from '../service/blogService';
+import {Router} from '@angular/router'; 
+
 
 @Component({
   selector: 'app-deletecontent',
@@ -14,7 +16,8 @@ export class DeletecontentComponent implements OnInit {
   allContentToDelete: AllContent[];
 
   constructor(
-    private blogServices: BlogServices
+    private blogServices: BlogServices,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -31,7 +34,7 @@ export class DeletecontentComponent implements OnInit {
         response => {
           console.log("response");
           console.log(response);
-          // this.router.navigate(['/blog/mainContent']);
+          this.router.navigate(['/blog/mainContent']);
         },
         error => {
           console.log("error");

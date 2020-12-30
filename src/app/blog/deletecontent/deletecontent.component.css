@@ -1,3 +1,11 @@
+.boxToContent{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%*.5);
+    justify-content: center;
+    align-items: center;
+    margin: calc(100%*0.05) auto;
+}
 .contentSingleTitle{
     display: flex;
     justify-content: inherit;

@@ -1,9 +1,14 @@
-<div class="row">
-    <div class="col-md-12">
-        <button (click)="saveNewContent()" class="btn btn-primary">Submit</button>
+<div class="boxBacOffice">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="allContents">
+                <div>
+                    <h2>New content to blog:</h2>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="row">
+    <div class="row">
         <div class="col-md-6">
             <div class="form-group">
                 <label for="title">Title</label>
@@ -94,9 +99,15 @@
                 <input type="text" class="form-control" id="openingHoursBO" name="openingHoursBO" maxlength="149">
             </div> -->
             <div class="form-group">
-                <label for="url">url</label>
+                <label for="url">URL</label>
                 <input type="text" class="form-control" id="url" name="url" maxlength="299"
                     [(ngModel)]="content.url">
             </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button (click)="saveNewContent()" class="btn btn-primary">Save new content</button>
+        </div>
+    </div>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogServices } from '../service/blogService';
+import {Router} from '@angular/router'; 
 
 @Component({
   selector: 'app-backoffice',
@@ -15,7 +16,10 @@ export class BackofficeComponent implements OnInit {
   };
   submitted = false;
 
-  constructor(private blogServices: BlogServices){}
+  constructor(
+    private blogServices: BlogServices,
+    private router: Router
+  ){}
 
   ngOnInit() {}
 
@@ -32,7 +36,7 @@ export class BackofficeComponent implements OnInit {
         response => {
           console.log(response);
           this.submitted = true;
-          // this.router.navigate(['/blog/mainContent']);
+          this.router.navigate(['/blog/mainContent']);
         },
         error => {
           console.log(error);
