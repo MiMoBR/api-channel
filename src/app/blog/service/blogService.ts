@@ -38,4 +38,11 @@ export class BlogServices{/*    https://www.techiediaries.com/angular-10-crud-ex
     deleteContent(id): Observable<any> {
         return this.http.delete(`${baseURL}/deleteByIdContent/${id}`);
     }
+
+    /*  LOGIN    */
+    loginService(data): Observable<any>{
+        console.log("LOGIN data");
+        console.log(data);
+        return this.http.post(`${baseURL}/validateLogin`, data);
+    }
 }
